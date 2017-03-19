@@ -19,7 +19,7 @@ class AboutInfixTypes extends KoanSuite with ShouldMatchers {
         val romeo = new Person("Romeo")
         val juliet = new Person("Juliet")
 
-        announceCouple(new Loves(romeo, juliet)) should be(__)
+        announceCouple(new Loves(romeo, juliet)) should be("Romeo is in love with Juliet")
     }
 
     koan(
@@ -40,7 +40,7 @@ class AboutInfixTypes extends KoanSuite with ShouldMatchers {
         val romeo = new Person("Romeo")
         val juliet = new Person("Juliet")
 
-        announceCouple(romeo loves juliet) should be(__)
+        announceCouple(romeo loves juliet) should be("Romeo is in love with Juliet")
     }
 
 
